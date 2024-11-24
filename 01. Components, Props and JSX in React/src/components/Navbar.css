@@ -1,0 +1,43 @@
+/* From Uiverse.io by akshat-patel28 */ 
+nav {
+    position: fixed; /* Ensures the element stays fixed while scrolling */
+    top: 5; /* Positions it at the top of the screen */
+    left: 50%; /* Aligns horizontally to the center of the screen */
+    transform: translateX(-50%); /* Centers the element accurately */
+    z-index: 1000; /* Keeps it above other elements */
+}
+
+.button-container {
+    display: flex;
+    background: white;
+    width: 40vw;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+          rgba(245, 73, 144, 0.5) 5px 10px 15px;
+  }
+  
+  .button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .icon {
+    font-size: 50px;
+  }
