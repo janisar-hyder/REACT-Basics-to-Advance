@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
@@ -8,6 +8,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [number, setNumber] = useState(0);
   const [color, setColor] = useState('white');
+  const btnRef = useRef();
 
   useEffect(() => {
     alert('count is changed: ' + count);
@@ -30,6 +31,7 @@ function App() {
       <div>The value of count is {count}</div>
       <button onClick={() => setCount(count + 1)}>Count++</button>
       <button onClick={() => setColor(getRandomColor())}>Change Navbar Color</button>
+      <button ref= {btnRef} onClick={()=>{ btnRef.current.style.backgroundColor = getRandomColor() }} >useRef</button>
     </>
   );
 }
