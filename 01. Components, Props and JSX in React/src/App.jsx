@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      
+
       <div className="main">
 
         <Card link='https://currenwatches.com.pk/cdn/shop/products/ec11af70f7f5a02faf8338e93a823e39_1445x.jpg?v=1716452915' category='Watch' heading='A watch is a compact timekeeping device designed for convenience and style.' author='janisar' />
