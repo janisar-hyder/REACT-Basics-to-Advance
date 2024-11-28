@@ -9,7 +9,6 @@ function App() {
   const [number, setNumber] = useState(0);
   const [color, setColor] = useState('white');
   const btnRef = useRef();
-
   useEffect(() => {
     alert('count is changed: ' + count);
     setNumber(count + 1);
