@@ -21,16 +21,16 @@ function App() {
     }
 
   ])
-  const Todo = ({todo})=>{
-    return (
-      <>
-      <div className="m-4 border border-1 border-purple-400">
-      <div className="todo">{todo.title}</div>
-      <div className="todo">{todo.desc}</div>
-      </div>
-      </>
-    )
-  }
+  // const Todo = ({todo})=>{
+  //   return (
+  //     <>
+  //     <div className="m-4 border border-1 border-purple-400">
+  //     <div className="todo">{todo.title}</div>
+  //     <div className="todo">{todo.desc}</div>
+  //     </div>
+  //     </>
+  //   )
+  // }
 
 
 
@@ -58,7 +58,11 @@ function App() {
       </div>
 
       {todos.map(todo=>{
-        return <Todo key={todo.title} todo={todo}/>
+        // return <Todo key={todo.title} todo={todo}/>
+        return <div key= {todo.title} className="m-4 border border-1 border-purple-400">
+        <div className="todo">{todo.title}</div>
+        <div className="todo">{todo.desc}</div>
+        </div>
       })}
 
       <p className="read-the-docs">
