@@ -6,6 +6,33 @@ import './App.css';
 function App() {
   const [count, setCount] = useState(0);
   const [dark, setDark] = useState(true);
+  const [todos, setTodos] = useState([
+    {
+      title: "Buy Milk",
+      desc: "Buy milk from the store"
+    },
+    {
+      title: "Do Homework",
+      desc: "Do homework for the day"
+    },
+    {
+      title: "Watch Movie",
+      desc: "Watch a movie for the evening"
+    }
+
+  ])
+  const Todo = ({todo})=>{
+    return (
+      <>
+      <div className="m-4 border border-1 border-purple-400">
+      <div className="todo">{todo.title}</div>
+      <div className="todo">{todo.desc}</div>
+      </div>
+      </>
+    )
+  }
+
+
 
   return (
     <div className={dark ? "dark-theme" : "light-theme"}>
@@ -29,6 +56,11 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
+
+      {todos.map(todo=>{
+        return <Todo key={todo.title} todo={todo}/>
+      })}
+
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
