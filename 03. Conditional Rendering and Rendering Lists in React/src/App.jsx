@@ -18,6 +18,10 @@ function App() {
     {
       title: "Watch Movie",
       desc: "Watch a movie for the evening"
+    },
+    {
+      title: "buy clothes",
+      desc: "buy clothes from outfitters"
     }
 
   ])
@@ -52,9 +56,6 @@ function App() {
         <button onClick={() => setDark(!dark)}>
           {dark ? "Switch to Light Mode" : "Switch to Dark Mode"}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
 
       {todos.map(todo=>{
@@ -65,9 +66,6 @@ function App() {
         </div>
       })}
 
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   );
 }
