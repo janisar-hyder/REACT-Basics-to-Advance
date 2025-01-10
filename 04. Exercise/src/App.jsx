@@ -13,6 +13,7 @@ const Card = ({ title, body }) => {
   );
 };
 
+
 const App = () => {
   const [data, setData] = useState([]);
 
