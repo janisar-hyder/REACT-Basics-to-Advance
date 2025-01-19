@@ -22,8 +22,8 @@ function App() {
   return (
     <>
       <button onMouseOver={hover} onClick={handleclick}>{btn}</button>
-      <input type="text" name='email' value={from.email} onChange={handleChnage} />
-      <input type="number" name='phone' value={from.phone} onChange={handleChnage} />
+      <input type="text" name='email' value={from.email? from.email : ""} onChange={handleChnage} />
+      <input type="number" name='phone' value={from.phone? from.email : ""} onChange={handleChnage} />
     </>
   )
 }
